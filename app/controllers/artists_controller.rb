@@ -16,4 +16,10 @@ class ArtistsController < ApplicationController
   def update
   end
 
+  private
+ 
+  def post_params
+    params.require(:artist).permit(:name, :bio)
+  end
+
 end
