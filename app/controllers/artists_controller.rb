@@ -8,12 +8,12 @@ class ArtistsController < ApplicationController
   end
 
   def create
-    @student = Student.new(params.require(:student))
-    @student.save
-    redirect_to student_path(@student)
+    @artist = Artist.new(params.require(:artist))
+    @artist.save
+    redirect_to artist_path(@artist)
   end
 
   def update
   end
-  
+
 end
